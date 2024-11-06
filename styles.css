@@ -199,7 +199,7 @@ nav ul {
     font-family: 'Pacifico';
     font-weight: 400;
     margin-bottom: 30px; /* Space between heading and cards */
-    font-size: 3rem; /* Increase font size for emphasis */
+    font-size: 2.7rem; /* Increase font size for emphasis */
     color: #fca311; /* Heading color */
     display: block; /* Ensures it takes full width */
     width: 100%; /* Full width to center it properly */
@@ -218,7 +218,9 @@ nav ul {
     background-color: #fff;
     border: 1px solid #e0e0e0;
     border-radius: 10px;
-    width: 300px; /* Adjust width as necessary */
+    width: 320px; 
+    padding: 7px;
+    padding-top: 0%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -232,12 +234,13 @@ nav ul {
 .skill-card h3 {
     font-family: 'Pacifico';
     font-weight: 400;
+    font-size: 1.5rem;
     color: hsl(231, 100%, 60%); /* Primary color for headings */
 }
 
 .skill-card p {
     font-family: 'Arvo';
-    font-size: small;
+    font-size: 0.8rem;
     color: #555; /* Subtle color for descriptions */
 }
 /* Full-page height */
