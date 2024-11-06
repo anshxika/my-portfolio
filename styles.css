@@ -15,7 +15,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 45px; /* Adjust height as needed */
+    height: 60px; /* Adjust height as needed */
     background-color: #000000; /* Set background color for navbar */
     position: fixed; /* Fix the navbar at the top */
     top: 0; /* Align to the top */
@@ -26,7 +26,7 @@ nav {
 
 .logo {
     font-weight: 400;
-    font-size: 1.2rem; /* Increase font size for better visibility */
+    font-size: 1.4rem; /* Increase font size for better visibility */
     font-family: 'Pacifico', cursive; /* Use Pacifico font */
     margin-left: 45px; /* Adjust margin as needed */
 }
@@ -43,6 +43,7 @@ nav ul li {
 
 nav a {
     color: white;
+    font-size: 1rem;
     text-decoration: none;
     transition: color 0.3s, transform 0.3s; /* Smooth transition */
 }
@@ -168,8 +169,8 @@ nav ul {
 }
 
 *.about-image img {
-    max-width: 60%; /* Control the image size */
-    border-radius: 50%; /* Rounded corners */
+    max-width: 50%;
+    border-radius: 25px; /* Rounded corners */
     border: 5px solid white; /* Golden border */
     box-shadow: 0 0 15px rgba(252, 163, 17, 0.6), 0 0 30px rgba(252, 163, 17, 0.4); /* Glowing effect */
     transition: transform 0.3s; /* Smooth transform on hover */
@@ -199,7 +200,7 @@ nav ul {
     font-family: 'Pacifico';
     font-weight: 400;
     margin-bottom: 30px; /* Space between heading and cards */
-    font-size: 2.7rem; /* Increase font size for emphasis */
+    font-size: 3rem; /* Increase font size for emphasis */
     color: #fca311; /* Heading color */
     display: block; /* Ensures it takes full width */
     width: 100%; /* Full width to center it properly */
@@ -241,6 +242,8 @@ nav ul {
 .skill-card p {
     font-family: 'Arvo';
     font-size: 0.8rem;
+    margin: auto;
+    margin-bottom: 15px;
     color: #555; /* Subtle color for descriptions */
 }
 /* Full-page height */
