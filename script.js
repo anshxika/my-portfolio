@@ -15,3 +15,40 @@ function isElementInViewport(el) {
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 }
+
+function animateProgressBars() {
+    const skillsSection = document.getElementById('skills');
+    const progressBars = document.querySelectorAll('.progress');
+
+    if (isElementInViewport(skillsSection)) {
+        progressBars.forEach(bar => {
+            const width = bar.style.width;
+            bar.style.width = '0'; 
+            setTimeout(() => {
+                bar.style.width = width; 
+            }, 50);
+        });
+    }
+}
+
+window.addEventListener('scroll', animateProgressBars);
+
+
+var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: -10,
+      stretch: 0,
+      depth: 80,
+      modifier: 15,
+      slideShadows: true,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    spaceBetween: 20, 
+    loop: true, 
+  });
