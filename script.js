@@ -6,7 +6,8 @@ var options = {
   };
   
   var typed = new Typed("#typed", options);
-// Check if the element is in the viewport
+
+
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
     return (
@@ -17,7 +18,10 @@ function isElementInViewport(el) {
     );
 }
 
-// Animate progress bars on scroll
+document.querySelector(".hamburger").addEventListener("click", () => {
+  document.querySelector(".nav-links").classList.toggle("active");
+});
+
 function animateProgressBars() {
     const skillsSection = document.getElementById('skills');
     const progressBars = document.querySelectorAll('.progress');
